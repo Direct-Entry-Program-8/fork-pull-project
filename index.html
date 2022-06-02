@@ -7,9 +7,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fork Pull Project</title>
     <style>
-        #pointer{
+        #pointer {
             position: absolute;
+            height: 50px;
+            width: 5%;
+            background: #29cb55;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            animation-name: hello-css3-animation;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
         }
+        @keyframes hello-css3-animation {
+            from {
+                color: red;
+            }
+
+            25% {
+                color: blue;
+                /* transform: skew(27deg); */
+            }
+
+            50% {
+                color: green;
+                transform: translateX(-50%) scale(1.5);
+            }
+
+            75% {
+                color: yellow;
+                /* transform: rotate(25deg); */
+            }
+
+            100% {
+                color: black;
+            }
+        }
+
+
     </style>
     <script defer src="js/main.js"></script>
 </head>
